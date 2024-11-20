@@ -1,0 +1,38 @@
+create database store;
+
+CREATE TABLE  Sari_sari_Store (
+PID INT PRIMARY KEY auto_increment, 
+ITEM_NAME VARCHAR(100) not null, 
+QUANTITY int not null,
+UNIT  VARCHAR(15),
+UNIT_PRICE DEC(10,2) not null,
+SELLING_PRICE dec(10,2) not null
+ );
+
+Insert into Sari_sari_Store(ITEM_NAME,QUANTITY,UNIT,UNIT_PRICE,SELLING_PRICE)
+Values
+("SELECT TOYO", 12 , "PCS", 19.00 , 20.00),
+("ΜΑΝΤΙΚΑ" , 22 , "PCS", 28.00, 30.00),
+("SELECT SUKA" , 22, "PCS", 19.00 , 20.00),
+("MAGIC SARAP", 16, "PCS", 5.00, 6.00),
+("ASIN", 1, "SACS", 9.00, 10.00),
+("BAWANG", 2 , "KG", 8.00, 10.00),
+("SIBUYAS", 3, "KG", 9.00, 10.00),
+("LUYA", 2, "KG" ,9.00, 10.00),
+("LUCKY ME", 20 ,"PCS" ,8.00 ,10.00),
+("GOLDEN BIHON", 10 ,"PCS" ,43.50, 45.00),
+("SOTANGHON" ,10 ,"PCS" ,9.00 ,10.00),
+("GREAT TASTE GRANULES 25g", 20, "SACHET", 18.00, 20.00),
+("ASUKAL", 50, "KG", 19.00, 20.00),
+("COFFEE MATE", 15, "PCS", 18.00, 20.00),
+("TINAPAY", 50, "PCS" ,4.00 ,5.00),
+("LADY'S CHOICE BACON SPREAD", 12, "PCS", 13.50, 15.00),
+("TOOTHBRUSH", 12, "PCS", 28.00, 30.00),
+("COLGATE", 12, "PCS" ,9.00, 10.00),
+("SILKA", 24, "PCS", 18.50, 20.00),
+("PALMOLIVE", 24, "PCS", 6.00, 7.00),
+("SARDINAS" ,24, "PCS", 27.00, 28.00),
+("CONDENSED MILK", 12, "PCS" ,53.50, 55.00),
+("BIGAS" ,10, "SACK", 48.00, 50.00),
+("PATUKA",10, "SACK", 44.00, 45.00),
+("MODESS", 23, "PACK" ,28.00, 30.00)
